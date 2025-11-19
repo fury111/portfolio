@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #094f4a;
+  background-color: white;
 }
 
 html {
@@ -14,6 +14,7 @@ html {
 #Home, #Objective, #Education, #experience, #projects, #contact-section {
   scroll-margin-top: 5rem; 
 }
+
 
 h1,h2,h3,h4,h5{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -27,19 +28,33 @@ flex-direction: column;
 padding: 0.625rem;
 flex: 1;
 gap: 1rem;
-}
+background: #25445c;
+background: linear-gradient(90deg, rgba(37, 68, 92, 1) 0%, rgba(167, 194, 176, 1) 50%, rgba(0, 0, 0, 1) 100%);  }
 
 .Hero {
     display: flex;
-    flex-direction: column;
     text-align: center;
     padding: 1.25rem;
-    margin: 1.25rem;
+    margin: auto;
+    width: 70%;
     gap: 1rem;
     background-color: white;
     border-radius: 1.25rem;
     border: .2rem solid #0F6C67;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
 }
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10%;
+  margin: auto;
+  gap: 2rem;
+
+}
+
 img {
     height: 25rem;
     width: 25rem;
@@ -50,15 +65,15 @@ img {
 
 .Hero a {
   text-decoration: none;
-    background-color: #0b6d67;
-    color: white;
-    padding: 0.625rem 1.563rem;
-    border-radius: 0.75rem;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    display: inline-block;
-    transition: 0.3s;
-    width: fit-content;
+  background-color: #0b6d67;
+  color: white;
+  padding: 0.625rem 1.563rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  transition: 0.3s;
+  width: fit-content;
   margin: 0 auto;
   text-align: center;
 }
@@ -69,7 +84,7 @@ img {
 
 .Hero h1 {
     color: #085e58;
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
@@ -80,7 +95,7 @@ img {
 .navbar {
     border:  0.1875rem solid #085e58;
     padding: 0.625rem;
-    background-color: #f7f7ee;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +103,8 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 70%;
+    margin: auto;
 }
 
 
@@ -124,6 +141,8 @@ img {
   padding: 1.25rem 1.25rem;
   font-family: Arial, sans-serif;
   border-radius: 1.25rem;
+  margin: auto;
+  width: 70%;
 
 }
 
@@ -161,7 +180,9 @@ img {
 
 
 .btn:hover {
-  background-color: #e5fffb;
+  background-position: 100% 100%;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -170,16 +191,32 @@ img {
     flex-direction: column;
     text-align: center;
     padding: 1.25rem;
-    margin: 1.25rem;
     gap: .1rem;
     background-color: #FFFBF8;
     border-radius: 1.25rem;
     border: .2rem solid #0F6C67;
+    margin: auto;
+    width: 70%;
 }
 
+.obj-content{
+  display: flex;
+  flex-direction: row-reverse;
+  
+  
+}
+
+.obj-content h1{
+  height: fit-content;
+  margin: auto;
+  font-size: 3rem;
+
+}
+
+
 .obj img{
-  height: 14.063rem;
-  width: 14.063rem;
+  aspect-ratio: 1/1;
+  height: 100%;
 
 }
 
@@ -188,11 +225,12 @@ img {
     flex-direction: column;
     text-align: center;
     padding: 1.25rem;
-    margin: 1.25rem;
     gap: 1rem;
     background-color: #FFFBF8;
     border-radius: 1.25rem;
     border: .2rem solid #0F6C67;
+    margin: auto;
+    width: 70%;
 }
 
 .edu img{
@@ -202,20 +240,20 @@ img {
 
 }
 .headerstyle{
-  background-color: #f7f7ee;
+  background-color: white;
   border-radius: 1.25rem;
   border: .2rem solid #0F6C67;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  padding: 1.4rem;
+  padding: 1rem;
   color: #085e58;
  
 }
 
 .paragraphstyle{
    color: #085e58;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -224,22 +262,28 @@ img {
     flex-direction: column;
     text-align: center;
     padding: 1.25rem;
-    margin: 1.25rem;
+    margin: auto;
+    width: 70%;
     gap: 2rem;
     background-color: #FFFBF8;
     border-radius: 1.25rem;
     border: .2rem solid #0F6C67;
 }
 
+.exprow{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1%;
 
+}
 .expcard{
   background-color: #0F6C67;
-  width: fit-content;
   margin: 0 auto;
   text-align: center;
   padding: 1rem;
   color: #FDFDF2;
   border-radius: 1.25rem;
+  height: fit-content;
 }
 
 .expcard h4 {
@@ -263,7 +307,8 @@ img {
     flex-direction: column;
     text-align: center;
     padding: 1.25rem;
-    margin: 1.25rem;
+    margin: auto;
+    width: 70%;
     gap: 2rem;
     background-color: #FFFBF8;
     border-radius: 1.25rem;
@@ -276,8 +321,13 @@ img {
   background-color: #085e58;
   border-radius: 1.25rem;
   padding: 1.25rem;
-  gap: 2rem;
+  gap: 1rem;
 
+}
+
+.projcard img{
+  aspect-ratio: 1/1;
+  height: 100%;
 }
 
 .projcardcontainer{
