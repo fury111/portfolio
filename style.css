@@ -309,7 +309,6 @@ img {
     padding: 1.25rem;
     margin: auto;
     width: 70%;
-    gap: 2rem;
     background-color: #FFFBF8;
     border-radius: 1.25rem;
     border: .2rem solid #0F6C67;
@@ -322,6 +321,7 @@ img {
   border-radius: 1.25rem;
   padding: 1.25rem;
   gap: 1rem;
+  width: 50%;
 
 }
 
