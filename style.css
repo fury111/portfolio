@@ -283,8 +283,8 @@ img {
   padding: 1rem;
   color: #FDFDF2;
   border-radius: 1.25rem;
-  height: fit-content;
-}
+  height: 100%;
+}a
 
 .expcard h4 {
   background-color:#FDFDF2;
